@@ -1,0 +1,5 @@
+Web/iTalker/.idea/
+Web/iTalker/build/
+Web/iTalker/gradle/
+Web/iTalker/.gradle/
+Web/iTalker/out/production/classes/net/zxw/web/italker/push/Application.class
