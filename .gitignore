@@ -3,3 +3,7 @@ Web/iTalker/build/
 Web/iTalker/gradle/
 Web/iTalker/.gradle/
 Web/iTalker/out/production/classes/net/zxw/web/italker/push/Application.class
+Web/iTalker/out/production/classes/net/zxw/web/italker/push/service/AccountService.class
+Web/iTalker/out/production/classes/net/zxw/web/italker/push/bean/User.class
+App/iTalker/gradle/wrapper/gradle-wrapper.jar
+App/

@@ -22,7 +22,9 @@ public abstract class Activity extends AppCompatActivity{
         initWindows();
 
         if(initArgs(getIntent().getExtras())) {
-            getContentLayoutId();
+            int layId = getContentLayoutId();
+            //得到界面Id并设置到Activity界面中
+            setContentView(layId);
             initWidget();
             initData();
         }else {
@@ -76,7 +78,7 @@ public abstract class Activity extends AppCompatActivity{
     @Override
     public void onBackPressed() {
         //得到当前Activity下的所有Fragment
-        List<android.support.v4.app.Fragment> fragments = getSupportFragmentManager().getFragments();
+        List<Fragment> fragments = getSupportFragmentManager().getFragments();
         //判断是否为空
         if(fragments != null && fragments.size() > 0){
             for(Fragment fragment : fragments){

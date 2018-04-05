@@ -2,15 +2,26 @@ package net.zxw.italker.push;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
-import net.zxw.italker.common.Common;
 
-public class MainActivity extends AppCompatActivity {
+import net.zxw.italker.common.app.Activity;
+
+import butterknife.BindView;
+
+public class MainActivity extends Activity {
+
+    @BindView(R.id.txt_test)
+    TextView mTestText;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getContentLayoutId() {
+        return R.layout.activity_main;
+    }
 
-       new Common();
+    @Override
+    protected void initWidget() {
+        super.initWidget();
+        mTestText.setText("Test Hello");
     }
 }
