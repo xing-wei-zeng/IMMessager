@@ -8,10 +8,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * @author zxw
  * @Email 18316275391@163.com
+ * @describe 圆形头像
  */
 
 public class PortraitView extends CircleImageView{
-
     public PortraitView(Context context) {
         super(context);
     }

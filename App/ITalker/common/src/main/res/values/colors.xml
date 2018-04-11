@@ -12,7 +12,7 @@
     <color name="windowsBackground">#f7f7f7</color>
     <color name="windowsBackgroundLight">#f8f8f8</color>
 
-    <!--字体颜色-->
+    <!--字体主色-->
     <color name="textPrimary">#4e5864</color>
     <color name="textSecond">#8d9ca9</color>
     <color name="textAccent">@color/colorAccent</color>
@@ -28,4 +28,3 @@
     <!--导航栏Icon遮罩色-->
     <color name="navIconTintLight">@color/white_alpha_240</color>
 </resources>
-
