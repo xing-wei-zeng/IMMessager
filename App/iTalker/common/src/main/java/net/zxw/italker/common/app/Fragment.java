@@ -2,6 +2,7 @@ package net.zxw.italker.common.app;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,10 +17,10 @@ import butterknife.Unbinder;
  * @describe TODO
  */
 
-public abstract class Fragment extends android.support.v4.app.Fragment{
-
+public abstract class Fragment extends android.support.v4.app.Fragment {
     protected View mRoot;
     protected Unbinder mRootUnBinder;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -44,8 +45,10 @@ public abstract class Fragment extends android.support.v4.app.Fragment{
                 ((ViewGroup) mRoot.getParent()).removeView(mRoot);
             }
         }
+
         return mRoot;
     }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -65,6 +68,7 @@ public abstract class Fragment extends android.support.v4.app.Fragment{
      *
      * @return 资源文件Id
      */
+    @LayoutRes
     protected abstract int getContentLayoutId();
 
     /**
@@ -90,4 +94,6 @@ public abstract class Fragment extends android.support.v4.app.Fragment{
     public boolean onBackPressed() {
         return false;
     }
+
 }
+
